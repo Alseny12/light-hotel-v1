@@ -43,9 +43,9 @@ public class LightLocationV1Application implements CommandLineRunner  {
 				h.setName(RandomString.make(18));
 				h.setPrice(100 + rnd.nextInt(10000));
 				h.setAvailable(rnd.nextBoolean());
-				h.setNumberChambre(rnd.nextInt());
-				h.setPhone(1+rnd.nextInt(10));
-				h.setAdresse(rnd.toString());
+				h.setNumberChambre(rnd.nextInt(100 - 0+1)+0);
+				h.setPhone("06"+Integer.toString(rnd.nextInt(9-0))+Integer.toString(rnd.nextInt(9-0))+Integer.toString(rnd.nextInt(9-0))+Integer.toString(rnd.nextInt(9-0))+Integer.toString(rnd.nextInt(9-0))+Integer.toString(rnd.nextInt(9-0))+Integer.toString(rnd.nextInt(9-0))+Integer.toString(rnd.nextInt(9-0)));
+				h.setAdresse(RandomString.make(18));
 				h.setNumberPersonne(1+rnd.nextInt(10));
 				h.setNumberEtoile(1+rnd.nextInt(5));
 				h.setSelected(rnd.nextBoolean());
